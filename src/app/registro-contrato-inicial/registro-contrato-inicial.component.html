@@ -1,0 +1,27 @@
+<form>
+    
+      <legend>Disabled fieldset example</legend>
+      <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Numero identificador de contrato</label>
+        <input type="number" name="disabledTextInput" class="form-control" placeholder="Ingrese el numero de contrato"  [(ngModel)]="contratoGuardar.codigo">
+      </div>
+
+    
+      <div class="mb-3">
+        <label for="disabledSelect" class="form-label">Tipo de suministro</label>
+        <select name="disabledSelect" class="form-select"  [(ngModel)]="contratoGuardar.tipoSuministro">
+          <option>Equipos</option>
+          <option>Productos de aseo</option>
+          <option>Papeleria</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Valor de contrato</label>
+        <input type="number" name="disabledTextInput" class="form-control" placeholder="Ingrese el valor del contrato" [(ngModel)]="contratoGuardar.valorContrato">
+      </div>
+      
+      
+      <button type="submit" class="btn btn-primary" (click)="guardar()">Registrar</button>
+    
+  </form>
