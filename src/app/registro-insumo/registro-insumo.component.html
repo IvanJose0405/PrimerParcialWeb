@@ -1,1 +1,24 @@
-<p>registro-insumo works!</p>
+<form>
+    
+      <legend>Registrar insumo</legend>
+      <div class="col-md-3">
+        <label for="disabledTextInput" class="form-label">Numero identificador de contrato</label>
+        <input type="number" name="disabledTextInput" class="form-control" placeholder="Ingrese el numero de contrato"  [(ngModel)]="insumo.codigo">
+      </div>
+
+      <div class="col-md-3">
+        <label for="disabledTextInput" class="form-label">Descripcion del producto</label>
+        <input type="text" name="disabledTextInput" class="form-control" placeholder="Ingrese la descripcion del producto"  [(ngModel)]="insumo.descripcionProducto">
+      </div>
+    
+      
+
+      <div class="col-md-3">
+        <label for="disabledTextInput" class="form-label">Valor de producto</label>
+        <input type="number" name="disabledTextInput" class="form-control" placeholder="Ingrese el valor del producto" [(ngModel)]="insumo.valorDelProducto">
+      </div>
+      
+      
+      <button type="submit" class="btn btn-primary" (click)="guardarInsumo()">Registrar</button>
+    
+  </form>
